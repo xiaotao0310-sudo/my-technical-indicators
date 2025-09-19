@@ -1,3 +1,6 @@
 [build]
   publish = "site"
-  command = "pip install mkdocs && mkdocs build"
+  command = "python -m pip install --user mkdocs && python -m mkdocs build"
+
+[build.environment]
+  PYTHON_VERSION = "3.13"
